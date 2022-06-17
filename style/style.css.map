@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAIA,AAAA,IAAI,CAAC;EACD,UAAU,ECLN,KAAK;CDMZ",
+    "mappings": "",
     "sources": [
         "style.scss",
         "modules/_varible.scss",
