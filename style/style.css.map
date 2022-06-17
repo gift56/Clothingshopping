@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAIA,AAAA,IAAI,CAAC;EACD,UAAU,ECLN,KAAK;CDMZ",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "modules/_varible.scss",
+        "modules/_reset.scss",
+        "modules/_classes.scss"
     ],
     "names": [],
     "file": "style.css"
