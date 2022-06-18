@@ -3,6 +3,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -26,10 +28,6 @@ h2,
 h3 {
   color: #242329;
   font-weight: 500;
-}
-
-ul {
-  list-style: none;
 }
 
 @media screen and (max-width: 992px) {
