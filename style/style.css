@@ -87,4 +87,53 @@ button {
   left: 0;
   z-index: 100;
 }
+
+.header .nav {
+  height: calc(3.5rem + 1.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.header .nav .nav_logo {
+  text-transform: lowercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.25rem;
+}
+
+.header .nav .nav_logo .logoIcon .nav_logo_Icon {
+  font-size: 1.25rem;
+}
+
+.header .nav .nav_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+.header .nav .login_toggle,
+.header .nav .nav_logo,
+.header .nav .nav_toggle,
+.header .nav .nav_shop {
+  color: #242329;
+}
 /*# sourceMappingURL=style.css.map */

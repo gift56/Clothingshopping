@@ -9,4 +9,39 @@
     top: 0;
     left: 0;
     z-index: $z-fixed;
+
+    .nav {
+        height: calc(3.5rem + 1.5rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        .nav_logo {
+            text-transform: lowercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+
+            .logoIcon{
+                .nav_logo_Icon{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .nav_btns{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .login_toggle,
+        .nav_logo,
+        .nav_toggle,
+        .nav_shop {
+            color: $titleColor;
+        }
+    }
 }
