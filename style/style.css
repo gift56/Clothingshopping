@@ -52,4 +52,30 @@ img {
 button {
   cursor: pointer;
 }
+
+.section {
+  padding: 7rem 0 2rem;
+}
+
+.section_title,
+.breadcrumb_title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.section_title,
+.breadcrumb_title,
+.breadcrumb_subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
 /*# sourceMappingURL=style.css.map */
