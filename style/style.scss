@@ -90,10 +90,63 @@
             cursor: pointer;
         }
     }
-
     .cart_title-center {
         font-size: $sizeh2;
         text-align: center;
         margin-bottom: $margin-B3;
+    }
+    .cart_container {
+        display: grid;
+        row-gap: 1.5rem;
+        .cart_card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .cart_box {
+                display: flex;
+                align-items: center;
+                padding: 0.75rem 1.25rem;
+                background-color: $textwhite;
+                img {
+                    width: 85px;
+                }
+            }
+            .cart_details {
+                .cart_title {
+                    font-size: $size;
+                    margin-bottom: $margin-Bs;
+                }
+                .cart_price {
+                    display: block;
+                    font-size: $sizeS;
+                    color: var(--first-color);
+                    margin-bottom: $margin-BXs;
+                }
+                .cart_amount {
+                    column-gap: 3rem;
+                }
+                .cart_amount-content {
+                    column-gap: 1rem;
+                    .cart_amount-box {
+                        display: inline-flex;
+                        background-color: $textwhite;
+                        padding: 0.25rem;
+                        cursor: pointer;
+                    }
+                }
+                .trash_cart {
+                    i {
+                        font-size: 1.15rem;
+                        color: var(--first-color);
+                        cursor: pointer;
+                    }
+                }
+                .cart_amount,
+                .cart_amount-content {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
     }
 }
