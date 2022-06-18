@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body,
+button,
+input {
+    font-family: $fontP;
+    font-size: $size;
+}
+body{
+    background-color: $bodyBg;
+}

@@ -1,3 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #f8f7fc;
+}
+
 @media screen and (max-width: 992px) {
   :root {
     --biggest-font-size: 2rem;
