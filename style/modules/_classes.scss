@@ -36,3 +36,16 @@ button {
 .grid {
     display: grid;
 }
+.active_links {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -0.75rem;
+        left: 45%;
+        width: 5px;
+        height: 5px;
+        background-color: $titleColor;
+        border-radius: 50%;
+    }
+}

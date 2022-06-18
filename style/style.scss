@@ -4,7 +4,7 @@
 
 .header {
     width: 100%;
-    background: $textwhite;
+    background: transparent;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,21 +24,45 @@
             align-items: center;
             gap: 0.25rem;
 
-            .logoIcon{
-                .nav_logo_Icon{
+            .logoIcon {
+                .nav_logo_Icon {
                     font-size: 1.25rem;
                 }
             }
         }
-        .nav_btns{
+        .nav_btns {
             display: flex;
             gap: 1rem;
             align-items: center;
             margin-left: auto;
+            .nav_toggle {
+                display: none;
+            }
+            .login_toggle,
+            .nav_toggle,
+            .nav_shop {
+                font-size: 1.25rem;
+                cursor: pointer;
+            }
         }
-
-        .login_toggle,
+        .nav-menu {
+            .nav_list {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                .nav_links {
+                    color: $titleColor;
+                    font-size: $size;
+                    font-weight: 500;
+                    transition: all 300ms ease;
+                    &:hover {
+                        color: var(--first-color);
+                    }
+                }
+            }
+        }
         .nav_logo,
+        .login_toggle,
         .nav_toggle,
         .nav_shop {
             color: $titleColor;

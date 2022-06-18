@@ -79,9 +79,24 @@ button {
   display: grid;
 }
 
+.active_links {
+  position: relative;
+}
+
+.active_links::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: #242329;
+  border-radius: 50%;
+}
+
 .header {
   width: 100%;
-  background: #ffffff;
+  background: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -130,8 +145,41 @@ button {
   margin-left: auto;
 }
 
-.header .nav .login_toggle,
+.header .nav .nav_btns .nav_toggle {
+  display: none;
+}
+
+.header .nav .nav_btns .login_toggle,
+.header .nav .nav_btns .nav_toggle,
+.header .nav .nav_btns .nav_shop {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.header .nav .nav-menu .nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav .nav-menu .nav_list .nav_links {
+  color: #242329;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.header .nav .nav-menu .nav_list .nav_links:hover {
+  color: var(--first-color);
+}
+
 .header .nav .nav_logo,
+.header .nav .login_toggle,
 .header .nav .nav_toggle,
 .header .nav .nav_shop {
   color: #242329;
