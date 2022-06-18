@@ -290,4 +290,31 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.cart .cart_prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6rem;
+}
+
+.cart .cart_prices .cart_price-item {
+  font-size: 0.875rem;
+}
+
+.cart .cart_prices .cart_price-total {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.cart .cart_prices .cart_price-item,
+.cart .cart_prices .cart_price-total {
+  color: #242329;
+}
 /*# sourceMappingURL=style.css.map */

@@ -149,4 +149,21 @@
             }
         }
     }
+    .cart_prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6rem;
+        .cart_price-item {
+            font-size: $sizeS;
+        }
+        .cart_price-total {
+            font-size: $sizeh3;
+            font-weight: 500;
+        }
+        .cart_price-item,
+        .cart_price-total {
+            color: $titleColor;
+        }
+    }
 }
