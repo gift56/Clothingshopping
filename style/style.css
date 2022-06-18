@@ -5,6 +5,8 @@
           box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  border: none;
+  outline: none;
 }
 
 html {
@@ -40,5 +42,14 @@ h3 {
     --small-size: 0.813rem;
     --Xsmall-size: 0.75rem;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

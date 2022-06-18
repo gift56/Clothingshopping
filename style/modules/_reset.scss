@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    border: none;
+    outline: none;
 }
 html {
     scroll-behavior: smooth;
@@ -24,4 +26,3 @@ h3 {
     color: $titleColor;
     font-weight: 500;
 }
-
