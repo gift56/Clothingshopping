@@ -69,3 +69,31 @@
         }
     }
 }
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $bodyBg;
+    z-index: $z-fixed;
+    width: 420px;
+    height: 100%;
+    box-shadow: -2px 0 4px $shadow;
+    padding: 3.5rem 2rem;
+    .closecartIcon {
+        i {
+            font-size: 2rem;
+            color: $titleColor;
+            position: absolute;
+            top: 1.25rem;
+            right: 0.9rem;
+            cursor: pointer;
+        }
+    }
+
+    .cart_title-center {
+        font-size: $sizeh2;
+        text-align: center;
+        margin-bottom: $margin-B3;
+    }
+}

@@ -184,4 +184,32 @@ button {
 .header .nav .nav_shop {
   color: #242329;
 }
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f8f7fc;
+  z-index: 100;
+  width: 420px;
+  height: 100%;
+  -webkit-box-shadow: -2px 0 4px #262626;
+          box-shadow: -2px 0 4px #262626;
+  padding: 3.5rem 2rem;
+}
+
+.cart .closecartIcon i {
+  font-size: 2rem;
+  color: #242329;
+  position: absolute;
+  top: 1.25rem;
+  right: 0.9rem;
+  cursor: pointer;
+}
+
+.cart .cart_title-center {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
 /*# sourceMappingURL=style.css.map */
