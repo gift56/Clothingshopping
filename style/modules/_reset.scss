@@ -12,6 +12,16 @@ input {
     font-family: $fontP;
     font-size: $size;
 }
-body{
+body {
     background-color: $bodyBg;
+    color: $textColor;
+}
+h1,
+h2,
+h3 {
+    color: $titleColor;
+    font-weight: 500;
+}
+ul {
+    list-style: none;
 }

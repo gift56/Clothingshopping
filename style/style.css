@@ -18,6 +18,18 @@ input {
 
 body {
   background-color: #f8f7fc;
+  color: #545260;
+}
+
+h1,
+h2,
+h3 {
+  color: #242329;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
 }
 
 @media screen and (max-width: 992px) {
