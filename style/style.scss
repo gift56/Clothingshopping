@@ -2,3 +2,11 @@
 @import "./modules/reset";
 @import "./modules/classes";
 
+.header {
+    width: 100%;
+    background: $textwhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+}
