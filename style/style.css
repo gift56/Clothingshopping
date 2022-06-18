@@ -94,6 +94,10 @@ button {
   border-radius: 50%;
 }
 
+.show_cart {
+  right: 0 !important;
+}
+
 .header {
   width: 100%;
   background: transparent;
@@ -188,7 +192,7 @@ button {
 .cart {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   background-color: #f8f7fc;
   z-index: 100;
   width: 420px;
@@ -196,6 +200,8 @@ button {
   -webkit-box-shadow: -2px 0 4px #262626;
           box-shadow: -2px 0 4px #262626;
   padding: 3.5rem 2rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .cart .closecartIcon i {
@@ -316,5 +322,43 @@ button {
 .cart .cart_prices .cart_price-item,
 .cart .cart_prices .cart_price-total {
   color: #242329;
+}
+
+.login {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f8f7fc;
+  z-index: 100;
+  width: 420px;
+  height: 100%;
+  -webkit-box-shadow: -2px 0 4px #262626;
+          box-shadow: -2px 0 4px #262626;
+  padding: 3.5rem 2rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.login .closeLoginIcon i {
+  font-size: 2rem;
+  color: #242329;
+  position: absolute;
+  top: 1.25rem;
+  right: 0.9rem;
+  cursor: pointer;
+}
+
+.login .login_title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.login .login_Form {
+  row-gap: 1.5rem;
+}
+
+.login .login_Form .login_content {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
