@@ -1,7 +1,6 @@
 @import "./modules/varible";
 @import "./modules/reset";
 @import "./modules/classes";
-
 .header {
     width: 100%;
     background: transparent;
@@ -66,6 +65,75 @@
         .nav_toggle,
         .nav_shop {
             color: $titleColor;
+        }
+    }
+}
+.home {
+    .home-swiper {
+        .swiper-wrapper {
+            .swiper-slide {
+                .home_content {
+                    padding: 9rem 0 2rem;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 3rem;
+                    .home_group {
+                        display: grid;
+                        position: relative;
+                        padding-top: 2rem;
+                        .home_img {
+                            height: 420px;
+                            transform: translateY(-4rem);
+                            justify-self: center;
+                        }
+                        .home_indicator {
+                            width: 8px;
+                            height: 8px;
+                            background-color: $titleColor;
+                            border-radius: 100%;
+                            position: absolute;
+                            bottom: 15%;
+                            left: 50%;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                right: 45%;
+                                width: 1px;
+                                height: 75px;
+                                background-color: $titleColor;
+                            }
+                        }
+                        .home_details-img {
+                            position: absolute;
+                            bottom: 0;
+                            right: 58%;
+                            .home_details-subtitle {
+                                font-size: $sizeh3 !important;
+                                text-transform: uppercase;
+                                margin-bottom: $margin-B1;
+                            }
+                            .home_details-title,
+                            .home_details-subtitle {
+                                display: block;
+                                text-align: right;
+                                font-size: $sizeS;
+                            }
+                        }
+                    }
+                    .home_data {
+                        .home_title {
+                            font-size: $size1;
+                            font-weight: 600;
+                            line-height: 119%;
+                            margin-bottom: $margin-B2;
+                        }
+                        .home_title{
+                            margin-bottom: $margin-B2b;
+                            padding-right: 2rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }

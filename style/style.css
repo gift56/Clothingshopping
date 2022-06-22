@@ -189,6 +189,80 @@ button {
   color: #242329;
 }
 
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content {
+  padding: 9rem 0 2rem;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+}
+
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group .home_img {
+  height: 420px;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group .home_indicator {
+  width: 8px;
+  height: 8px;
+  background-color: #242329;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+}
+
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group .home_indicator::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 45%;
+  width: 1px;
+  height: 75px;
+  background-color: #242329;
+}
+
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group .home_details-img {
+  position: absolute;
+  bottom: 0;
+  right: 58%;
+}
+
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group .home_details-img .home_details-subtitle {
+  font-size: 1.25rem !important;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group .home_details-img .home_details-title,
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group .home_details-img .home_details-subtitle {
+  display: block;
+  text-align: right;
+  font-size: 0.875rem;
+}
+
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_data .home_title {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 119%;
+  margin-bottom: 2rem;
+}
+
+.home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_data .home_title {
+  margin-bottom: 2.5rem;
+  padding-right: 2rem;
+}
+
 .cart {
   position: fixed;
   top: 0;
