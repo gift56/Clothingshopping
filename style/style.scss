@@ -171,7 +171,7 @@
 .login {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     background-color: $bodyBg;
     z-index: $z-fixed;
     width: 420px;
@@ -194,10 +194,43 @@
         text-align: center;
         margin-bottom: $margin-B3;
     }
-    .login_Form{
+    .login_Form {
         row-gap: 1.5rem;
-        .login_content{
+        .login_content {
             background-color: $textwhite;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem 0.25rem;
+            .login_label {
+                font-size: $sizeS;
+                color: $titleColor;
+            }
+            .login_input {
+                width: 100%;
+                background-color: $textwhite;
+                color: $textColor;
+                font-size: $size;
+                padding: 0.25rem 0.5rem 0.5rem 0;
+            }
+        }
+        .button {
+            display: inline-block;
+            background: var(--first-color);
+            color: $textwhite;
+            padding: 1rem 1.75rem;
+            border-radius: 0.5rem;
+            font-family: 500;
+            transition: all 300ms ease;
+            &:hover {
+                background: var(--first-color-alt);
+            }
+        }
+        .signUp {
+            color: $titleColor;
+            font-size: $sizeS;
+            font-weight: 500;
+            a {
+                color: var(--first-color);
+            }
         }
     }
 }
