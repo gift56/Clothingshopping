@@ -334,6 +334,37 @@ img {
   font-size: 1.5rem;
 }
 
+.discount .discount_container {
+  -ms-grid-columns: (max-content)[2];
+      grid-template-columns: repeat(2, -webkit-max-content);
+      grid-template-columns: repeat(2, max-content);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7rem;
+          column-gap: 7rem;
+  background-color: #ffffff;
+  padding: 3rem 0;
+  border-radius: 3rem;
+}
+
+.discount .discount_container .discount_img {
+  width: 200px;
+}
+
+.discount .discount_container .discount_data {
+  padding-left: 6rem;
+  text-align: center;
+}
+
+.discount .discount_container .discount_data .discount_title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .cart {
   position: fixed;
   top: 0;

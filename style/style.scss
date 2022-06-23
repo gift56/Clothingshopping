@@ -148,6 +148,28 @@
         }
     }
 }
+.discount {
+    .discount_container {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        align-items: center;
+        column-gap: 7rem;
+        background-color: $textwhite;
+        padding: 3rem 0;
+        border-radius: 3rem;
+        .discount_img {
+            width: 200px;
+        }
+        .discount_data {
+            padding-left: 6rem;
+            text-align: center;
+            .discount_title {
+                font-size: $sizeh2;
+                margin-bottom: $margin-B2;
+            }
+        }
+    }
+}
 
 .cart {
     position: fixed;
