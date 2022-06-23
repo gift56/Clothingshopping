@@ -554,6 +554,21 @@ img {
   color: #545260;
 }
 
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer .footer_container {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
 .cart {
   position: fixed;
   top: 0;

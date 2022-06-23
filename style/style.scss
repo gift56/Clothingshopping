@@ -310,6 +310,15 @@
         }
     }
 }
+.footer {
+    position: relative;
+    overflow: hidden;
+    .footer_container {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        column-gap: 1rem;
+    }
+}
 .cart {
     position: fixed;
     top: 0;
