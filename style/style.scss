@@ -283,7 +283,7 @@
     }
 }
 .newsletter {
-    &_container {
+    .newsletter_container {
         display: grid;
         grid-template-columns: 0.5fr;
         justify-content: center;
