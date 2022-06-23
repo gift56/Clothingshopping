@@ -86,6 +86,6 @@ img {
     margin: 0 0.5rem !important;
 }
 .scroll-header {
-    background: $bodyBg;
-    box-shadow: 0 1px 4px $shadow;
+    background: $bodyBg !important;
+    box-shadow: 0 1px 4px $shadow !important;
 }

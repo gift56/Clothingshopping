@@ -145,9 +145,9 @@ img {
 }
 
 .scroll-header {
-  background: #f8f7fc;
-  -webkit-box-shadow: 0 1px 4px #262626;
-          box-shadow: 0 1px 4px #262626;
+  background: #f8f7fc !important;
+  -webkit-box-shadow: 0 1px 4px #262626 !important;
+          box-shadow: 0 1px 4px #262626 !important;
 }
 
 .header {
@@ -157,6 +157,8 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .header .nav {

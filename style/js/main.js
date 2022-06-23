@@ -6,3 +6,10 @@ var homeSwiper = new Swiper(".home-swiper", {
         clickable: true,
     },
 });
+
+const scrollHeader = () => {
+    const Header = document.getElementById('header')
+
+    if (this.scrollY >= 50) Header.classList.add('scroll-header'); else Header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader);
