@@ -176,14 +176,14 @@
         .new_content {
             position: relative;
             background-color: $textwhite;
-            width: 310px;
+            width: 307px;
             padding: 2rem 0;
             text-align: center;
             border-radius: 1rem;
             overflow: hidden;
             &:hover {
                 .new_button {
-                    right: 0;
+                    right: 2%;
                 }
                 .new_img {
                     transform: translateY(-0.5rem);

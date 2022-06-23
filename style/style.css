@@ -372,7 +372,7 @@ img {
 .new .new_container .new_content {
   position: relative;
   background-color: #ffffff;
-  width: 310px;
+  width: 307px;
   padding: 2rem 0;
   text-align: center;
   border-radius: 1rem;
@@ -380,7 +380,7 @@ img {
 }
 
 .new .new_container .new_content:hover .new_button {
-  right: 0;
+  right: 2%;
 }
 
 .new .new_container .new_content:hover .new_img {
