@@ -122,6 +122,34 @@ img {
           column-gap: 0.5rem;
 }
 
+.swiper-pagination {
+  position: initial !important;
+  margin-top: 2.5rem !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background: #242329;
+  opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 1.5rem;
+  height: 5px;
+  border-radius: 0.5rem;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 0.5rem !important;
+}
+
+.scroll-header {
+  background: #f8f7fc;
+  -webkit-box-shadow: 0 1px 4px #262626;
+          box-shadow: 0 1px 4px #262626;
+}
+
 .header {
   width: 100%;
   background: transparent;

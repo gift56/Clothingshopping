@@ -67,3 +67,25 @@ img {
     align-items: center;
     column-gap: 0.5rem;
 }
+.swiper-pagination {
+    position: initial !important;
+    margin-top: $margin-B2b !important;
+    .swiper-pagination-bullet {
+        width: 5px;
+        height: 5px;
+        background: $titleColor;
+        opacity: 1;
+        &-active {
+            width: 1.5rem;
+            height: 5px;
+            border-radius: 0.5rem;
+        }
+    }
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0.5rem !important;
+}
+.scroll-header {
+    background: $bodyBg;
+    box-shadow: 0 1px 4px $shadow;
+}
