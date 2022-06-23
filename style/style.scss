@@ -256,6 +256,28 @@
                 background-color: $bodyBg;
                 padding: 2.5rem 3rem 2rem 1.5rem;
                 border-radius: 1rem;
+                &:hover {
+                    .steps_card-number {
+                        transform: translateY(-0.25rem);
+                    }
+                }
+                &-number {
+                    display: inline-block;
+                    background-color: var(--first-color);
+                    color: $textwhite;
+                    padding: 0.5rem 0.75rem;
+                    border-radius: 0.25rem;
+                    font-size: $sizeh2;
+                    margin-bottom: $margin-B1;
+                    transition: all 300ms ease;
+                }
+                &-title {
+                    font-size: $size;
+                    margin-bottom: $margin-BXs;
+                }
+                &-description {
+                    font-size: $sizeS;
+                }
             }
         }
     }
