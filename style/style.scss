@@ -244,6 +244,22 @@
         }
     }
 }
+.steps {
+    .steps_bg {
+        background-color: $textwhite;
+        padding: 3.5rem 2.5rem;
+        .steps_container {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2rem;
+            padding-top: 1rem;
+            .steps_card {
+                background-color: $bodyBg;
+                padding: 2.5rem 3rem 2rem 1.5rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
 .cart {
     position: fixed;
     top: 0;

@@ -458,6 +458,25 @@ img {
   aspect-ratio: 1/1;
 }
 
+.steps .steps_bg {
+  background-color: #ffffff;
+  padding: 3.5rem 2.5rem;
+}
+
+.steps .steps_bg .steps_container {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.steps .steps_bg .steps_container .steps_card {
+  background-color: #f8f7fc;
+  padding: 2.5rem 3rem 2rem 1.5rem;
+  border-radius: 1rem;
+}
+
 .cart {
   position: fixed;
   top: 0;
