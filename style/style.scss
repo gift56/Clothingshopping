@@ -282,6 +282,34 @@
         }
     }
 }
+.newsletter {
+    &_container {
+        display: grid;
+        grid-template-columns: 0.5fr;
+        justify-content: center;
+        .newsletter_description {
+            padding: 0 3rem;
+            text-align: center;
+            margin-bottom: $margin-B2;
+        }
+        .newsletter_form {
+            background-color: $textwhite;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 0.75rem;
+            .newsletter_input {
+                width: 70%;
+                padding: 0 0.75rem;
+                background-color: transparent;
+                color: $titleColor;
+                &::placeholder {
+                    color: $textColor;
+                }
+            }
+        }
+    }
+}
 .cart {
     position: fixed;
     top: 0;
