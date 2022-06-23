@@ -16,6 +16,7 @@ window.addEventListener('scroll', scrollHeader);
 
 var newSwiper = new Swiper(".new-swiper", {
     spaceBetween: 16,
+    centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
 });
