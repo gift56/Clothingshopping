@@ -380,6 +380,9 @@
             @media screen and (max-width: 992px) {
                 grid-template-columns: repeat(2, 1fr);
             }
+            @media screen and (max-width: 576px) {
+                grid-template-columns: 1fr;
+            }
             .steps_card {
                 background-color: $bodyBg;
                 padding: 2.5rem 3rem 2rem 1.5rem;

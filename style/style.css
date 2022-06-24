@@ -773,6 +773,13 @@ img {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .steps .steps_bg .steps_container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .steps .steps_bg .steps_container .steps_card {
   background-color: #f8f7fc;
   padding: 2.5rem 3rem 2rem 1.5rem;
