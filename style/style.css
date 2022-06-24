@@ -565,13 +565,39 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .discount .discount_container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 1.25rem;
+    padding: 2.5rem 0 1.5rem;
+    border-radius: 1rem;
+  }
+}
+
 .discount .discount_container .discount_img {
   width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .discount .discount_container .discount_img {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .discount .discount_container .discount_data {
   padding-left: 6rem;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .discount .discount_container .discount_data {
+    padding-left: 0;
+  }
 }
 
 .discount .discount_container .discount_data .discount_title {
