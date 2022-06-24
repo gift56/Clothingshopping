@@ -1,14 +1,3 @@
-@media screen and (max-width: 992px) {
-    :root {
-        --biggest-font-size: 2rem;
-        --h1-font-size: 1.5rem;
-        --h2-font-size: 1.25rem;
-        --h3-font-size: 1rem;
-        --normal-size: 0.938rem;
-        --small-size: 0.813rem;
-        --Xsmall-size: 0.75rem;
-    }
-}
 img {
     max-width: 100%;
     height: auto;
@@ -28,11 +17,18 @@ img {
 }
 .section {
     padding: 7rem 0 2rem;
+    @media screen and (max-width: 767px) {
+        padding: 4.5rem 0 2rem;
+    }
 }
 .section_title,
 .breadcrumb_title {
     font-size: $sizeh1;
     margin-bottom: $margin-B3;
+    @media screen and (max-width: 992px) {
+        font-size: $sizeh2;
+        margin-bottom: $margin-B2b;
+    }
 }
 .section_title,
 .breadcrumb_title,
@@ -42,6 +38,10 @@ img {
 .container {
     max-width: 968px;
     margin: 0 auto;
+    @media screen and (max-width: 992px) {
+        margin-left: $margin-B2;
+        margin-right: $margin-B2;
+    }
 }
 .grid {
     display: grid;
@@ -70,6 +70,13 @@ img {
 .swiper-pagination {
     position: initial !important;
     margin-top: $margin-B2b !important;
+
+    @media screen and (max-width: 992px) {
+        margin-top: $margin-B1 !important;
+    }
+    @media screen and (max-width: 767px) {
+        margin-top: $margin-B2;
+    }
     .swiper-pagination-bullet {
         width: 5px;
         height: 5px;
@@ -100,4 +107,18 @@ img {
 ::-webkit-scrollbar-thumb {
     background: $scrollThumbColor;
     border-radius: 0.5rem;
+}
+.navclose {
+    font-size: 2rem;
+    position: absolute;
+    top: 0.9rem;
+    right: 1.25rem;
+    cursor: pointer;
+}
+.navclose,
+.nav_toggle {
+    display: none;
+    @media screen and (max-width: 767px) {
+        display: block !important;
+    }
 }

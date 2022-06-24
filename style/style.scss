@@ -16,6 +16,9 @@
         justify-content: space-between;
         align-items: center;
         gap: 3rem;
+        @media screen and (max-width: 767px) {
+            height: $headerHeight;
+        }
         .nav_logo {
             text-transform: lowercase;
             font-weight: 600;
@@ -23,10 +26,15 @@
             display: inline-flex;
             align-items: center;
             gap: 0.25rem;
-
+            @media screen and (max-width: 790px) {
+                font-size: 0.813rem;
+            }
             .logoIcon {
                 .nav_logo_Icon {
                     font-size: 1.25rem;
+                    @media screen and (max-width: 790px) {
+                        font-size: 0.875rem;
+                    }
                 }
             }
         }
@@ -35,9 +43,7 @@
             gap: 1rem;
             align-items: center;
             margin-left: auto;
-            .nav_toggle {
-                display: none;
-            }
+
             .login_toggle,
             .nav_toggle,
             .nav_shop {
@@ -46,21 +52,38 @@
             }
         }
         .nav-menu {
+            @media screen and (max-width: 767px) {
+                position: fixed;
+                background-color: $bodyBg;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                height: 100%;
+                padding: 6rem 2rem 3.5rem;
+                transition: all 300ms ease;
+            }
             .nav_list {
                 display: flex;
                 gap: 2rem;
                 align-items: center;
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                }
                 .nav_links {
                     color: $titleColor;
                     font-size: $size;
                     font-weight: 500;
                     transition: all 300ms ease;
+                    @media screen and (max-width: 992px) {
+                        font-size: var(--normal-size);
+                    }
                     &:hover {
                         color: var(--first-color);
                     }
                 }
             }
         }
+        .navclose,
         .nav_logo,
         .login_toggle,
         .nav_toggle,
@@ -77,6 +100,14 @@
                     padding: 9rem 0 2rem;
                     grid-template-columns: repeat(2, 1fr);
                     column-gap: 3rem;
+                    @media screen and (max-width: 992px) {
+                        padding: 8rem 0 2rem;
+                    }
+                    @media screen and (max-width: 767px) {
+                        padding: 0;
+                        grid-template-columns: 1fr;
+                        row-gap: 1rem;
+                    }
                     .home_group {
                         display: grid;
                         position: relative;
@@ -85,6 +116,16 @@
                             height: 420px;
                             transform: translateY(-4rem);
                             justify-self: center;
+                            @media screen and (max-width: 1200px) {
+                                height: 400px;
+                            }
+                            @media screen and (max-width: 992px) {
+                                height: 300px;
+                                transform: translateY(0);
+                            }
+                            @media screen and (max-width: 767px) {
+                                height: 250px;
+                            }
                         }
                         .home_indicator {
                             width: 8px;
@@ -102,22 +143,42 @@
                                 width: 1px;
                                 height: 75px;
                                 background-color: $titleColor;
+                                @media screen and (max-width: 992px) {
+                                    top: -3rem;
+                                    height: 48px;
+                                }
+                            }
+                            @media screen and (max-width: 992px) {
+                                bottom: initial;
+                                left: initial;
+                                top: 7rem;
+                                right: 2rem;
                             }
                         }
                         .home_details-img {
                             position: absolute;
                             bottom: 0;
                             right: 58%;
+                            @media screen and (max-width: 992px) {
+                                right: 0.5rem;
+                                bottom: initial;
+                            }
                             .home_details-subtitle {
                                 font-size: $sizeh3 !important;
                                 text-transform: uppercase;
                                 margin-bottom: $margin-B1;
+                                @media screen and (max-width: 992px) {
+                                    font-size: $size;
+                                }
                             }
                             .home_details-title,
                             .home_details-subtitle {
                                 display: block;
                                 text-align: right;
                                 font-size: $sizeS;
+                                @media screen and (max-width: 992px) {
+                                    font-size: $sizeXS;
+                                }
                             }
                         }
                     }
@@ -127,10 +188,22 @@
                             font-weight: 600;
                             line-height: 119%;
                             margin-bottom: $margin-B2;
+                            @media screen and (max-width: 992px) {
+                                font-size: $sizeh1;
+                            }
+                            @media screen and (max-width: 767px) {
+                                margin-bottom: $margin-B2b;
+                            }
                         }
                         .home_description {
                             margin-bottom: $margin-B2b;
                             padding-right: 2rem;
+                            @media screen and (max-width: 992px) {
+                                padding-right: 0;
+                            }
+                            @media screen and (max-width: 767px) {
+                                margin-bottom: $margin-B3;
+                            }
                         }
                         .home_buttons {
                             display: flex;
@@ -139,6 +212,9 @@
                                 color: var(--first-color);
                                 .button_icon {
                                     font-size: $sizeh2;
+                                    @media screen and (max-width: 992px) {
+                                        font-size: $sizeh3 !important;
+                                    }
                                 }
                             }
                         }
@@ -157,6 +233,9 @@
         background-color: $textwhite;
         padding: 3rem 0;
         border-radius: 3rem;
+        @media screen and (max-width: 992px) {
+            column-gap: 3rem;
+        }
         .discount_img {
             width: 200px;
         }
@@ -166,6 +245,9 @@
             .discount_title {
                 font-size: $sizeh2;
                 margin-bottom: $margin-B2;
+                @media screen and (max-width: 992px) {
+                    font-size: $sizeh3;
+                }
             }
         }
     }
@@ -181,6 +263,10 @@
             text-align: center;
             border-radius: 1rem;
             overflow: hidden;
+            @media screen and (max-width: 992px) {
+                width: 243px;
+                padding: 2rem 0 1.5rem 0;
+            }
             &:hover {
                 .new_button {
                     right: 2%;
@@ -199,15 +285,26 @@
                 padding: 0.25rem 0.5rem;
                 border-radius: 0.25rem;
                 transition: all 300ms ease;
+                @media screen and (max-width: 992px) {
+                    font-size: $sizeXS;
+                }
             }
             .new_title {
                 font-size: $sizeh3;
                 font-weight: 500;
+
+                @media screen and (max-width: 992px) {
+                    font-size: $size;
+                }
             }
             .new_subtitle {
                 display: block;
                 font-size: $sizeS;
                 margin-bottom: $margin-B1;
+
+                @media screen and (max-width: 992px) {
+                    font-size: $sizeXS;
+                }
             }
             .new_prices {
                 display: inline-flex;
@@ -222,6 +319,9 @@
                     font-size: $sizeS;
                     font-weight: 500;
                     text-decoration: line-through;
+                    @media screen and (max-width: 992px) {
+                        font-size: $sizeXS;
+                    }
                 }
             }
             .new_button {
@@ -240,6 +340,15 @@
                 margin-bottom: $margin-B1;
                 transition: all 300ms ease;
                 aspect-ratio: 1/1;
+                @media screen and (max-width: 992px) {
+                    width: 120px;
+                }
+            }
+            .new_img,
+            .new_subtitle {
+                @media screen and (max-width: 992px) {
+                    margin-bottom: $margin-Bs !important;
+                }
             }
         }
     }
@@ -248,10 +357,16 @@
     .steps_bg {
         background-color: $textwhite;
         padding: 3.5rem 2.5rem;
+        @media screen and (max-width: 992px) {
+            padding: 3rem 2rem 2rem;
+        }
         .steps_container {
             grid-template-columns: repeat(3, 1fr);
-            column-gap: 2rem;
+            gap: 2rem;
             padding-top: 1rem;
+            @media screen and (max-width: 992px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
             .steps_card {
                 background-color: $bodyBg;
                 padding: 2.5rem 3rem 2rem 1.5rem;
@@ -270,13 +385,22 @@
                     font-size: $sizeh2;
                     margin-bottom: $margin-B1;
                     transition: all 300ms ease;
+                    @media screen and (max-width: 992px) {
+                        font-size: $sizeh3;
+                    }
                 }
                 &-title {
                     font-size: $size;
                     margin-bottom: $margin-BXs;
+                    @media screen and (max-width: 992px) {
+                        font-size: 0.935rem;
+                    }
                 }
                 &-description {
                     font-size: $sizeS;
+                    @media screen and (max-width: 992px) {
+                        font-size: $sizeXS;
+                    }
                 }
             }
         }
@@ -345,7 +469,10 @@
                     border-radius: 0.25rem;
                     padding: 0.25rem;
                     color: $titleColor;
-                    font-size: 1rem;
+                    font-size: $size;
+                    @media screen and (max-width: 992px) {
+                        font-size: 0.935rem;
+                    }
                     &:hover {
                         background-color: var(--first-color);
                         color: $textwhite;
@@ -355,6 +482,9 @@
             .footer_title {
                 font-size: $sizeh2;
                 margin-bottom: $margin-B1;
+                @media screen and (max-width: 992px) {
+                    font-size: $sizeh3;
+                }
             }
             .footer_links {
                 display: grid;
@@ -366,6 +496,9 @@
                     &:hover {
                         color: $titleColor;
                     }
+                    @media screen and (max-width: 992px) {
+                        font-size: $sizeXS;
+                    }
                 }
             }
         }
@@ -375,6 +508,9 @@
         text-align: center;
         margin-top: 6rem;
         font-size: $sizeS;
+        @media screen and (max-width: 992px) {
+            font-size: $sizeXS;
+        }
     }
 }
 .scrollUp {
@@ -422,6 +558,9 @@
         font-size: $sizeh2;
         text-align: center;
         margin-bottom: $margin-B3;
+        @media screen and (max-width: 992px) {
+            font-size: $sizeh3;
+        }
     }
     .cart_container {
         display: grid;
@@ -443,12 +582,18 @@
                 .cart_title {
                     font-size: $size;
                     margin-bottom: $margin-Bs;
+                    @media screen and (max-width: 992px) {
+                        font-size: $sizeS;
+                    }
                 }
                 .cart_price {
                     display: block;
                     font-size: $sizeS;
                     color: var(--first-color);
                     margin-bottom: $margin-BXs;
+                    @media screen and (max-width: 992px) {
+                        font-size: $sizeXS;
+                    }
                 }
                 .cart_amount {
                     column-gap: 3rem;
@@ -484,10 +629,16 @@
         margin-top: 6rem;
         .cart_price-item {
             font-size: $sizeS;
+            @media screen and (max-width: 992px) {
+                font-size: $sizeXS;
+            }
         }
         .cart_price-total {
             font-size: $sizeh3;
             font-weight: 500;
+            @media screen and (max-width: 992px) {
+                font-size: $size;
+            }
         }
         .cart_price-item,
         .cart_price-total {
@@ -520,6 +671,9 @@
         font-size: $sizeh2;
         text-align: center;
         margin-bottom: $margin-B3;
+        @media screen and (max-width: 992px) {
+            font-size: $sizeh3;
+        }
     }
     .login_Form {
         row-gap: 1.5rem;
@@ -530,6 +684,9 @@
             .login_label {
                 font-size: $sizeS;
                 color: $titleColor;
+                @media screen and (max-width: 992px) {
+                    font-size: $sizeXS;
+                }
             }
             .login_input {
                 width: 100%;
@@ -537,6 +694,9 @@
                 color: $textColor;
                 font-size: $size;
                 padding: 0.25rem 0.5rem 0.5rem 0;
+                @media screen and (max-width: 992px) {
+                    font-size: $sizeS;
+                }
             }
         }
         .signUp {
@@ -545,6 +705,9 @@
             font-weight: 500;
             a {
                 color: var(--first-color);
+            }
+            @media screen and (max-width: 992px) {
+                font-size: $sizeXS;
             }
         }
     }
