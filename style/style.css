@@ -833,6 +833,13 @@ img {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .newsletter .newsletter_container {
+    -ms-grid-columns: 0.7fr;
+        grid-template-columns: 0.7fr;
+  }
+}
+
 .newsletter .newsletter_container .newsletter_description {
   padding: 0 3rem;
   text-align: center;

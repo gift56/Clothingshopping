@@ -424,6 +424,9 @@
         display: grid;
         grid-template-columns: 0.5fr;
         justify-content: center;
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 0.7fr;
+        }
         .newsletter_description {
             padding: 0 3rem;
             text-align: center;
