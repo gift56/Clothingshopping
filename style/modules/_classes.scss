@@ -89,3 +89,15 @@ img {
     background: $bodyBg !important;
     box-shadow: 0 1px 4px $shadow !important;
 }
+.show-scroll {
+    bottom: 3rem !important;
+}
+::-webkit-scrollbar {
+    width: -60rem !important;
+    background: $scrollBarColor !important;
+    border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+    background: $scrollThumbColor;
+    border-radius: 0.5rem;
+}

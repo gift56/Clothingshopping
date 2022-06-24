@@ -150,6 +150,21 @@ img {
           box-shadow: 0 1px 4px #262626 !important;
 }
 
+.show-scroll {
+  bottom: 3rem !important;
+}
+
+::-webkit-scrollbar {
+  width: -60rem !important;
+  background: #e3e2e9 !important;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8c6d2;
+  border-radius: 0.5rem;
+}
+
 .header {
   width: 100%;
   background: transparent;
@@ -562,6 +577,9 @@ img {
 .footer .footer_container {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -586,11 +604,92 @@ img {
 }
 
 .footer .footer_container .footer_content .footer_logo .footer_logo-icon {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .footer .footer_container .footer_content .footer_description {
   margin-bottom: 2.5rem;
+}
+
+.footer .footer_container .footer_content .footer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.75rem;
+          column-gap: 0.75rem;
+}
+
+.footer .footer_container .footer_content .footer_social .footer_social-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  color: #242329;
+  font-size: 1rem;
+}
+
+.footer .footer_container .footer_content .footer_social .footer_social-link:hover {
+  background-color: var(--first-color);
+  color: #ffffff;
+}
+
+.footer .footer_container .footer_content .footer_title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footer_container .footer_content .footer_links {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 0.38rem;
+}
+
+.footer .footer_container .footer_content .footer_links .footer_link {
+  color: #545260;
+  font-size: 0.875rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.footer .footer_container .footer_content .footer_links .footer_link:hover {
+  color: #242329;
+}
+
+.footer .footer_copy {
+  display: block;
+  text-align: center;
+  margin-top: 6rem;
+  font-size: 0.875rem;
+}
+
+.scrollUp {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background: var(--first-color);
+  border-radius: 0.4rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  z-index: 10;
+  opacity: 0.8;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.scrollUp:hover {
+  opacity: 1;
+}
+
+.scrollUp-icon {
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 
 .cart {

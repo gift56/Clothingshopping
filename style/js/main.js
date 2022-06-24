@@ -20,3 +20,11 @@ var newSwiper = new Swiper(".new-swiper", {
     slidesPerView: "auto",
     loop: true,
 });
+
+cartShop.addEventListener('click', () => { cart.classList.add('show_cart') })
+
+loginToggle.addEventListener('click', () => { loginForm.classList.add('show_cart') })
+
+loginClose.addEventListener('click', () => { loginForm.classList.remove('show_cart') })
+
+cartClose.addEventListener('click', () => { cart.classList.remove('show_cart') })

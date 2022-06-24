@@ -62,7 +62,7 @@
         </nav>
     </header>
     <div class="cart" id="cart">
-        <span class="closecartIcon">
+        <span class="closecartIcon" id="cartClose">
             <i class="fa-solid fa-xmark"></i>
         </span>
         <h2 class="cart_title-center">My Cart</h2>
@@ -136,19 +136,19 @@
             <span class="cart_price-total">$38</span>
         </div>
     </div>
-    <div class="login" id="login">
+    <div class="login" id="loginForm">
         <span class="closeLoginIcon" id="loginClose">
             <i class="fa-solid fa-xmark"></i>
         </span>
         <h2 class="login_title">Login</h2>
         <form action="" class="login_Form grid">
             <div class="login_content">
-                <label for="" class="login_label">Email</label>
-                <input type="email" class="login_input">
+                <label for="email" class="login_label">Email</label>
+                <input type="email" id="email" class="login_input">
             </div>
             <div class="login_content">
-                <label for="" class="login_label">Password</label>
-                <input type="password" class="login_input">
+                <label for="password" class="login_label">Password</label>
+                <input type="password" id="password" class="login_input">
             </div>
             <div>
                 <a href="" class="button">Sign in</a>
@@ -417,7 +417,9 @@
         </div>
         <span class="footer_copy">&#169; Crypticalcoder, All rights reserved</span>
     </footer>
-
+    <a href="#" class="scrollUp">
+        <i class="fas fa-arrow-up scrollUp-icon"></i>
+    </a>
     <script src="/style/js/swiper-bundle.min.js"></script>
     <script src="/style/js/main.js"></script>
 </body>
