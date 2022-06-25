@@ -1,6 +1,10 @@
 const navLinks = document.querySelectorAll('.nav_list .nav_item .nav_links');
 
 var homeSwiper = new Swiper(".home-swiper", {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
     spaceBetween: 30,
     loop: true,
     pagination: {
@@ -17,6 +21,10 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 var newSwiper = new Swiper(".new-swiper", {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
     spaceBetween: 16,
     centeredSlides: true,
     slidesPerView: "auto",
