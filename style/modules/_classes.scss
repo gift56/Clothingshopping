@@ -42,6 +42,10 @@ img {
         margin-left: $margin-B2;
         margin-right: $margin-B2;
     }
+    @media screen and (max-width: 320px) {
+        margin-left: $margin-B1;
+        margin-right: $margin-B1;
+    }
 }
 .grid {
     display: grid;

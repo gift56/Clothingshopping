@@ -39,6 +39,13 @@ h4 {
   font-weight: 500;
 }
 
+@media screen and (max-width: 576px) {
+  .login,
+  .cart {
+    width: 100% !important;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -99,6 +106,13 @@ img {
   .container {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -240,6 +254,12 @@ img {
 @media screen and (max-width: 767px) {
   .header .nav {
     height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header .nav {
+    gap: 0;
   }
 }
 
@@ -407,6 +427,12 @@ img {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group .home_img {
+    height: 200px;
+  }
+}
+
 .home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_group .home_indicator {
   width: 8px;
   height: 8px;
@@ -525,6 +551,19 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 320px) {
+  .home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_data .home_buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    row-gap: 1rem;
+  }
 }
 
 .home .home-swiper .swiper-wrapper .swiper-slide .home_content .home_data .home_buttons .button-link {
@@ -759,6 +798,12 @@ img {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .steps .steps_bg {
+    padding: 2rem 1rem;
+  }
+}
+
 .steps .steps_bg .steps_container {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
@@ -784,6 +829,12 @@ img {
   background-color: #f8f7fc;
   padding: 2.5rem 3rem 2rem 1.5rem;
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 320px) {
+  .steps .steps_bg .steps_container .steps_card {
+    padding: 1rem;
+  }
 }
 
 .steps .steps_bg .steps_container .steps_card:hover .steps_card-number {
@@ -847,6 +898,13 @@ img {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .newsletter .newsletter_container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .newsletter .newsletter_container .newsletter_description {
   padding: 0 3rem;
   text-align: center;
@@ -888,6 +946,12 @@ img {
   color: #545260;
 }
 
+@media screen and (max-width: 380px) {
+  .newsletter .newsletter_container .newsletter_form .newsLetterBtn {
+    padding: 1rem 1rem;
+  }
+}
+
 .footer {
   position: relative;
   overflow: hidden;
@@ -899,9 +963,7 @@ img {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
 }
@@ -911,9 +973,14 @@ img {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer .footer_container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: flex-start;
   }
 }
 

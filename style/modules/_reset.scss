@@ -30,3 +30,9 @@ h4 {
     color: $titleColor;
     font-weight: 500;
 }
+.login,
+.cart {
+    @media screen and (max-width: 576px) {
+        width: 100% !important;
+    }
+}

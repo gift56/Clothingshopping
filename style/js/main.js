@@ -1,3 +1,5 @@
+const navLinks = document.querySelectorAll('.nav_list .nav_item .nav_links');
+
 var homeSwiper = new Swiper(".home-swiper", {
     spaceBetween: 30,
     loop: true,
@@ -37,3 +39,16 @@ const scrollingUp = () => {
     if (this.scrollY >= 450) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollingUp);
+
+const removeLink = () => {
+    navLinks.forEach(link => {
+        link.classList.remove('active_links')
+    })
+}
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        removeLink();
+        link.classList.add('active_links')
+    })
+})
