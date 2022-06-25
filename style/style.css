@@ -369,6 +369,11 @@ img {
   color: #242329;
 }
 
+.home .home-swiper .swiper-wrapper:hover {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
 .home .home-swiper .swiper-wrapper .swiper-slide .home_content {
   padding: 9rem 0 2rem;
   -ms-grid-columns: (1fr)[2];
@@ -662,6 +667,11 @@ img {
   text-align: center;
   border-radius: 1rem;
   overflow: hidden;
+}
+
+.new .new_container .new_content:hover {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 @media screen and (max-width: 992px) {
